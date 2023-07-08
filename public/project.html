@@ -7,13 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./css/output2.css"/>
+    <link rel="stylesheet" href="./css/slide.css"/>
 
 </head>
 <body>
-    <div class="bg-lightPink p-2">
+    <!-- top message -->
+    <div class="bg-lightPink p-3">
         <p class="text-center text-colorBlack text-xs md:text-sm">Free Silicone Scalp Massager With Purchase!</p>
     </div>
+
+
+    <!-- main section of the website including nav -->
     <div class="container mt-6 px-4 md:px-0 md:w-[1200px] md:mx-auto">
         <!-- logo section -->
         <nav class="flex justify-between">
@@ -28,32 +40,61 @@
         </nav>
         <main class="flex flex-col mt-6 md:mt-10 md:flex-row md:justify-between">
             <!-- main inneer section one -->
-            <div class="mt-10 space-y-6 hidden md:flex md:flex-col">
-                <div class="w-23 h-23 mt-[0]">
-                    <img class="w-ful h-full " src="./img2/Rectangle 10.png"/>
+            <div class="mt-10 hidden md:block">
+                <div class="w-28 h-[505px] relative">
+                    <div class="swiper mySwiperZero">
+                        <div class="w-full h-full swiper-wrapper">
+                            <div class="w-23 h-23 swiper-slide">
+                                <img class="w-23 h-full" src="./img2/Rectangle 10.png"/>
+                            </div>
+                            <div class="w-23 h-23 swiper-slide">
+                                <img class="w-23 h-full " src="./img2/Rectangle 12.png"/>
+                            </div>
+                            <div class="w-23 h-23 swiper-slide">
+                                <img class="w-23 h-full " src="./img2/Rectangle 14.png"/>
+                            </div>
+                            <div class="w-23 h-23 swiper-slide">
+                                <img class="w-23 h-full " src="./img2/Rectangle 15.png"/>
+                            </div>
+                            <div class="w-23 h-23 swiper-slide">
+                                <img class="w-23 h-full " src="./img2/Rectangle 10.png"/>
+                            </div>
+                            <div class="w-23 h-23 swiper-slide">
+                                <img class="w-23 h-full " src="./img2/Rectangle 12.png"/>
+                            </div>
+                            <div class="w-23 h-23 swiper-slide">
+                                <img class="w-23 h-full " src="./img2/Rectangle 14.png"/>
+                            </div>
+                        </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    </div>
                 </div>
-                <div class="w-23 h-23">
-                    <img class="w-ful h-full " src="./img2/Rectangle 12.png"/>
-                </div>
-                <div class="w-23 h-23">
-                    <img class="w-ful h-full " src="./img2/Rectangle 14.png"/>
-                </div>
-                <div class="w-23 h-23">
-                    <img class="w-ful h-full " src="./img2/Rectangle 15.png"/>
-                </div>
-                <div class="w-23 h-23">
-                    <img class="w-ful h-full " src="./img2/Rectangle 10.png"/>
-                </div>
-                <div class="w-23 h-23">
-                    <img class="w-ful h-full " src="./img2/Rectangle 12.png"/>
-                </div>
-                <!-- <div class="w-23 h-23">
-                    <img class="w-ful h-full " src="./img2/Rectangle 14.png"/>
-                </div> -->
+                
             </div>
             <!-- main innner section two  -->
-            <div class="md:w-[482px] md:h-[625px]">
-                <img class="w-[320px] h-[400px] mx-auto object-cover md:mx-0 md:w-full md:h-auto" src="img2/Rectangle 8.png"/>
+    
+            <div class="h-[430px] relative md:hidden">
+                <div class="swiper mySwiperZeroForMobile">
+                    <div class="swiper-wrapper">
+                        <div class="w-[320px] h-[400px] swiper-slide">
+                           <div class="w-[320px] h-[400px]">
+                                <img class="w-full h-full rounded-xl mx-auto object-cover md:mx-0 md:w-full md:h-auto" src="img2/Rectangle 8.png"/>
+                           </div>
+                        </div>
+                        <div class="w-[320px] h-[400px] swiper-slide">
+                            <div class="w-[320px] h-[400px]">
+                                <img class="w-full h-full rounded-xl mx-auto object-cover md:mx-0 md:w-full md:h-auto" src="img2/Rectangle 8.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-zeroForMobile"></div>
+    
+                </div>
+            </div>
+    
+            <div class="h-[400px] hidden md:block md:w-[482px] md:h-[625px]" style="scroll-snap-type: x mandatory;">
+    
+                <img class="w-full h-full mx-auto object-cover md:mx-0 md:w-full md:h-auto" src="img2/Rectangle 8.png"/>
             </div>
             
             <!-- main inner section three -->
@@ -84,64 +125,141 @@
         </main>
     </div>
 
-    <section class="bg-lightBlue">
-        <div class="container mx-auto mt-6 md:w-[1200px]">
-    
-           <div class="flex flex-col md:flex-row md:py-20">
-             
-            <div class="bg-white mb-14 px-4 md:px-0 md:mb-0 md:bg-transparent md:w-1/2">
-                <h1 class="text-[30px] mb-4 text-colorBlack font-bold md:[text-40px]">
-                    What Makes Us Great
-                </h1>
-                <p class="text-[16px] text-colorBlack mb-6 md:mb-0 md:mt-6 md:w-[90%] md:text-[18px]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
-                    ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
-                    inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
-                    libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent 
-                    per conubia nostra, per inceptos himenaeos.
-                </p>
-             </div>
-    
-             <div class="flex justify-around align-middle text-center md:justify-around mb-10 md:mb-0  md:w-1/2">
-                <div>
-                    <img class="mx-auto mb-5 w-[48px] h-[48px] md:w-[70px] md:h-[70px]" src="img2/Group 2.svg"/>
-                    <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">No</span>
-                    <br/>
-                    <span class="text-[16px] text-center text-colorBlack font-medium md:text-[22px]">phthalates</span>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">Color safe</span>
-                </div>
-                <div>
-                    <img class="mx-auto mb-5 w-[48px] h-[48px] md:w-[70px] md:h-[70px]" src="img2/Group 2 (1).svg"/>
-                    <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">No</span>
-                    <br/>
-                    <span class="text-[16px] text-center text-colorBlack font-medium md:text-[22px]">sulfates</span>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">Vegan</span>
-                </div>
-    
-                <div>
-                    <img class="mx-auto mb-5 w-[48px] h-[48px] md:w-[70px] md:h-[70px]" src="img2/Group 2 (2).svg"/>
-                    <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">No</span>
-                    <br/>
-                    <span class="text-[16px] text-center text-colorBlack font-medium md:text-[22px]">parabens</span>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <span class="block text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">Organic</span>
-                    <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">ingredients</span>
+    <div class="flex flex-col-reverse md:flex-col">
+        <!-- instyle, people and other company opion about mounia -->
 
+        <section class="my-20 hidden md:block">
+            <div class="container md:mx-auto md:w-[1200px]">
+                <div class="flex justify-between gap-x-4">
+                    <div class="w-1/3 px-[40px] py-[24px] border-2 border-colorBlack rounded-[24px]">
+                        <img src="img2/image one.png"/>
+                        <p class="text-colorBlack text-[18px] mt-6">
+                            "I noticed a lot more definition and shine in my hair after using each product for the 
+                            first time. Plus, the set comes with a free scalp massager that can help if you have a dry or 
+                            itchy scalp." - Larry Stansbury, Commerce Producer
+                        </p>
+                    </div>
+                    <div class="w-1/3 px-[40px] py-[24px] border-2 border-colorBlack rounded-[24px]">
+                        <img src="img2/image 1.png"/>
+                        <p class="text-colorBlack text-[18px] mt-6">
+                            "It only took a couple of washes to realize that this shampoo is so much more effective than 
+                            other brands I've tried before." - Larry Stansbury, Commerce Producer
+                        </p>
+                    </div>
+                    <div class="w-1/3 px-[40px] py-[24px] border-2 border-colorBlack rounded-[24px]">
+                        <img src="img2/image 1 (1).png"/>
+                        <p class="text-colorBlack text-[18px] mt-6">
+                            “It feels great on my hair, and I love how smooth it makes it!”
+                        </p>
+                    </div>
                 </div>
-             </div>
-           </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    
+        <!-- mobile sections of instyle people and other company opion about mounia-->
+    
+        <section class="px-6 md:hidden">
+            <div class="h-[382px] relative">
+                <div class="swiper mySwiperOne">
+                    <div class="w-full h-full swiper-wrapper">
+                        
+                        <div class="w-full swiper-slide">
+                                <div class="w-full px-[24px] py-[16px] border-[1px] border-colorBlack rounded-[24px]">
+                                    <img src="img2/image one.png"/>
+                                    <p class="text-colorBlack text-[16px] mt-6">
+                                        "I noticed a lot more definition and shine in my hair after using each product for the 
+                                        first time. Plus, the set comes with a free scalp massager that can help if you have a dry or 
+                                        itchy scalp." - Larry Stansbury, Commerce Producer
+                                    </p>
+                                </div>
+                        </div>
+                        
+                        <div class="w-full swiper-slide">
+                            <div class="w-full h-[308px] px-[24px] py-[16px] border-[1px] border-colorBlack rounded-[24px]">
+                                <img src="img2/image 1.png"/>
+                                <p class="text-colorBlack text-[16px] mt-6">
+                                    "It only took a couple of washes to realize that this shampoo is so much more 
+                                    effective than other brands I've tried before." - Larry Stansbury, 
+                                    Commerce Producer
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="w-full swiper-slide">
+                            <div class="w-full h-[308px] px-[24px] py-[16px] border-[1px] border-colorBlack rounded-[24px]">
+                                <img src="img2/image 1 (1).png"/>
+                                <p class="text-colorBlack text-[16px] mt-6">
+                                    “It feels great on my hair, and I love how smooth it makes it!”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-one"></div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <!-- what made mounia product great?  -->
+        <section class="bg-lightBlue mt-6 md:mt-0">
+            <div class="container mx-auto md:mt-6 md:w-[1200px]">
+        
+               <div class="flex flex-col md:flex-row md:py-20">
+                 
+                <div class="bg-white mb-14 px-4 md:px-0 md:mb-0 md:bg-transparent md:w-1/2">
+                    <h1 class="text-[30px] mb-4 text-colorBlack font-bold md:text-[40px]">
+                        What Makes Us Great
+                    </h1>
+                    <p class="text-[16px] text-colorBlack mb-6 md:mb-0 md:mt-6 md:w-[90%] md:text-[18px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
+                        ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
+                        inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate 
+                        libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent 
+                        per conubia nostra, per inceptos himenaeos.
+                    </p>
+                 </div>
+        
+                 <div class="flex justify-around align-middle text-center md:justify-around mb-10 md:mb-0  md:w-1/2">
+                    <div>
+                        <img class="mx-auto mb-5 w-[48px] h-[48px] md:w-[70px] md:h-[70px]" src="img2/Group 2.svg"/>
+                        <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">No</span>
+                        <br/>
+                        <span class="text-[16px] text-center text-colorBlack font-medium md:text-[22px]">phthalates</span>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">Color safe</span>
+                    </div>
+                    <div>
+                        <img class="mx-auto mb-5 w-[48px] h-[48px] md:w-[70px] md:h-[70px]" src="img2/Group 2 (1).svg"/>
+                        <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">No</span>
+                        <br/>
+                        <span class="text-[16px] text-center text-colorBlack font-medium md:text-[22px]">sulfates</span>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">Vegan</span>
+                    </div>
+        
+                    <div>
+                        <img class="mx-auto mb-5 w-[48px] h-[48px] md:w-[70px] md:h-[70px]" src="img2/Group 2 (2).svg"/>
+                        <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">No</span>
+                        <br/>
+                        <span class="text-[16px] text-center text-colorBlack font-medium md:text-[22px]">parabens</span>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <span class="block text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">Organic</span>
+                        <span class="text-[16px] text-center text-colorBlack font-semibold md:text-[22px]">ingredients</span>
+    
+                    </div>
+                 </div>
+               </div>
+            </div>
+        </section>
+    </div>
 
-    <!-- section four -->
+    <!-- how mounia product works and its breif-->
     <section class="container px-4 mt-14 md:px-0 md:w-[1200px] md:mx-auto md:mb-28">
         <div class="hidden md:block">
             <h1 class="text-colorBlack text-[30px] font-bold md:text-[40px]">
@@ -182,8 +300,473 @@
         </div>
     </section>
 
-    <!-- section seven -->
-    <section class="pb-24 mt-16 bg-lightBlue relative md:py-16 md:mt-24">
+    <!-- user review about mounia -->
+    <section class="hidden container w-[1200px] md:mx-auto my-24 md:flex md:gap-x-6">
+        <div class="w-1/3 bg-lightBlue p-6 rounded-3xl">
+            
+            <div class="mb-4 flex justify-between">
+                <div class="flex gap-x-3">
+                    <img class="w-60px w-60px rounder[100px]" src="img2/Rectangle 7.png" />
+                    <div class="ml-2">
+                        <span class="text-[18px] text-ColorBlack font-semibold">
+                            Ashley J
+                        </span>
+                        <img class="inline w-4 h-4" src="img2//Group 11.svg"/>
+                        <span class="block mt-1 text-[12px] font-normal text-colorSeven">
+                            12.04.2023
+                        </span>
+                    </div>
+                </div>
+                <div class="flex gap-x-1">
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+
+                </div>
+            </div>
+
+            <h4 class="text-colorBlack text-[18px] font-semibold mb-2">"Took the risk, new fan of Mounia"</h4>
+            <p class="text-[18px] text-colorBlack">
+                My girlfriend told me about this new brand and I decided to check them out. After looking at their catalog, 
+                I decided just to take the risk and buy their whole line. I figured it would be best to see the effects when all 
+                the products are working together. I have been using this product line for about 6 weeks and I have seen a big 
+                difference in my hair. A lot more life, body, and bouncy. Also, my hair just FEELS healthier - hard to describe. 
+                So, I will be def buying this again and I wouldn't hesitate to suggest it to a friend."
+            </p>
+        </div>
+
+        <div class="w-1/3 bg-lightBlue p-6 rounded-3xl">
+            <div class="mb-4 flex justify-between">
+                <div class="flex gap-x-3">
+                    <img class="w-60px w-60px rounder[100px]" src="img2/Rectangle 7 (1).png" />
+                    <div class="ml-2">
+                        <span class="text-[18px] text-ColorBlack font-semibold">
+                            Margareth K.
+                        </span>
+                        <img class="inline w-4 h-4" src="img2//Group 11.svg"/>
+                        <span class="block mt-1 text-[12px] font-normal text-colorSeven">
+                            22.03.2023
+                        </span>
+                    </div>
+                </div>
+                <div class="flex gap-x-1">
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+
+                </div>
+            </div>
+            <h4 class="text-colorBlack text-[18px] font-semibold mb-2">
+                "So Much Moisture!"
+            </h4>
+            <p class="text-[18px] text-colorBlack">
+                "I'm maybe a month in using Mounia, and so far, I love it! My hair is fine with a wavy curl pattern. 
+                It has been such a struggle to find the right shampoo for my hair without weighing it down. 
+                Since using Mounia, my hair is noticeably more hydrated. Right out of the shower, 
+                my hair is not weighed down by the conditioner. My ends are still on the dry side but I believe that if 
+                I continue using Mounia, that will be remedied. My hair has never been softer."
+            </p>
+                
+        </div>
+
+        <div class="w-1/3 bg-lightBlue p-6 rounded-3xl">
+            <div class="mb-4 flex justify-between">
+                <div class="flex gap-x-3">
+                    <img class="w-60px w-60px rounder[100px]" src="img2/Rectangle 7 (2).png" />
+                    <div class="ml-2">
+                        <span class="text-[18px] text-ColorBlack font-semibold">
+                            Juliana
+                        </span>
+                        <img class="inline w-4 h-4" src="img2//Group 11.svg"/>
+                        <span class="block mt-1 text-[12px] font-normal text-colorSeven">
+                            13.01.2023
+                        </span>
+                    </div>
+                </div>
+                <div class="flex gap-x-1">
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+                    <img class="w-6 h-6" src="img2/Star 1.svg"/>
+
+                </div>
+            </div>
+            <h4 class="text-colorBlack text-[18px] font-semibold mb-2">
+                "'I NEVER cheat on Mounia again"
+            </h4>
+            <p class="text-[18px] text-colorBlack">
+                ''No joke. I've been using other products the last few days (i recently ran out of Mounia after using only mounia for about a year) 
+                and my hair DOES NOT FEEL THE SAME. It's not as silky soft or bouncy as usual and it's starting to look and feel dull and frizzy. 
+                I had to get more asap. I will be stocked up for good! Thank youuuuuuuuuu for such an amazing product!!!"
+            </p>
+                
+        </div>
+    </section>
+    <!-- user review mobile slide -->
+    <section class="h-[550px] my-10 relative md:hidden">
+        <div class="swiper mySwiperThree">
+            <!-- slide one -->
+            <div class="swiper-wrapper">
+                <div class="px-4 swiper-slide">
+                        <div class="bg-lightBlue p-6 rounded-3xl">
+                
+                            <div class="mb-4 flex justify-between">
+                                <div class="flex gap-x-3">
+                                    <img class="w-16 h-16 rounded-full" src="img2/Rectangle 7.png" />
+                                    <div class="ml-2">
+                                        <span class="text-[16px] text-ColorBlack font-semibold">
+                                            Ashley J
+                                        </span>
+                                        <img class="inline w-4 h-4" src="img2//Group 11.svg"/>
+                                        <span class="block mt-1 text-[12px] font-normal text-colorSeven">
+                                            12.04.2023
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-2 flex gap-x-1">
+                                    <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                    <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                    <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                    <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                    <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                    
+                                </div>
+                            </div>
+                    
+                            <h4 class="text-colorBlack text-[14px] font-semibold mb-2">"Took the risk, new fan of Mounia"</h4>
+                            <p class="text-[14px] text-colorBlack">
+                                My girlfriend told me about this new brand and I decided to check them out. After looking at their catalog, 
+                                I decided just to take the risk and buy their whole line. I figured it would be best to see the effects when all 
+                                the products are working together. I have been using this product line for about 6 weeks and I have seen a big 
+                                difference in my hair. A lot more life, body, and bouncy. Also, my hair just FEELS healthier - hard to describe. 
+                                So, I will be def buying this again and I wouldn't hesitate to suggest it to a friend."
+                            </p>
+                        </div>
+                </div>
+                <!-- slide two -->
+                <div class="px-4 swiper-slide">
+                    <div class="h-[472px] bg-lightBlue p-6 rounded-3xl">
+                        <div class="mb-4 flex justify-between">
+                            <div class="flex gap-x-3">
+                                <img class="w-16 h-16 rounded-full" src="img2/Rectangle 7 (1).png" />
+                                <div class="ml-2">
+                                    <span class="text-[16px] text-ColorBlack font-semibold">
+                                        Margareth K.
+                                    </span>
+                                    <img class="inline w-4 h-4" src="img2//Group 11.svg"/>
+                                    <span class="block mt-1 text-[12px] font-normal text-colorSeven">
+                                        22.03.2023
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mt-2 flex gap-x-1">
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                
+                            </div>
+                        </div>
+                        <h4 class="text-colorBlack text-[14px] font-semibold mb-2">
+                            "So Much Moisture!"
+                        </h4>
+                        <p class="text-[14px] text-colorBlack">
+                            "I'm maybe a month in using Mounia, and so far, I love it! My hair is fine with a wavy curl pattern. 
+                            It has been such a struggle to find the right shampoo for my hair without weighing it down. 
+                            Since using Mounia, my hair is noticeably more hydrated. Right out of the shower, 
+                            my hair is not weighed down by the conditioner. My ends are still on the dry side but I believe that if 
+                            I continue using Mounia, that will be remedied. My hair has never been softer."
+                        </p>
+                            
+                    </div>
+                </div>
+                <!-- slide three -->
+                <div class="px-4 swiper-slide">
+
+                    <div class="h-[472px] bg-lightBlue p-6 rounded-3xl">
+                        <div class="mb-4 flex justify-between">
+                            <div class="flex gap-x-3">
+                                <img class="w-60px w-60px rounder[100px]" src="img2/Rectangle 7 (2).png" />
+                                <div class="ml-2">
+                                    <span class="text-[16px] text-ColorBlack font-semibold">
+                                        Juliana
+                                    </span>
+                                    <img class="inline w-4 h-4" src="img2//Group 11.svg"/>
+                                    <span class="block mt-1 text-[12px] font-normal text-colorSeven">
+                                        13.01.2023
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mt-2 flex gap-x-1">
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                                <img class="w-[14px]  h-[14px] " src="img2/Star 1.svg"/>
+                
+                            </div>
+                        </div>
+                        <h4 class="text-colorBlack text-[14px] font-semibold mb-2">
+                            "'I NEVER cheat on Mounia again"
+                        </h4>
+                        <p class="text-[14px] text-colorBlack">
+                            ''No joke. I've been using other products the last few days (i recently ran out of Mounia after using only mounia for about a year) 
+                            and my hair DOES NOT FEEL THE SAME. It's not as silky soft or bouncy as usual and it's starting to look and feel dull and frizzy. 
+                            I had to get more asap. I will be stocked up for good! Thank youuuuuuuuuu for such an amazing product!!!"
+                        </p>
+                            
+                    </div>
+                
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination swiper-pagination-three"></div>
+        </div>
+    </section>
+
+
+    <!-- mounia products elements details and by what it's made of -->
+    <section class="hidden container md:block w-[1200px] mx-auto">
+        <h1 class="text-colorBlack text-[40px] font-bold">
+            What’s In The System?
+        </h1>
+        <h6 class="text-lightBlue text-[32px] font-semibold">
+            Your new and improved haircare routine.
+        </h6>
+        <div class="flex gap-x-6 mt-9">
+            <div class="p-6 border-[1px] rounded-[24px] border-colorBlack">
+                <span class="bg-lightPink text-colorBlack font-semibold px-4 py-3 rounded-[200px]">
+                    Step 1: Cleanse
+                </span>
+                <p class="text-colorBlack text-[18px] mt-6">
+                    Our Rinse uses Ionic Cleansing™ technology to gently clean hair using the natural magnetic attraction 
+                    of positively-charged Rhassoul Clay to negatively-charged dirt and impurities
+                </p>
+                <h6 class="text-colorBlack text-[18px] font-semibold my-2">Benefits:</h6>
+                <ul class="space-y-2 mb-3">
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Rebalances scalp
+                        </span>
+                    </list> 
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Removes build-up & impurities
+                        </span>
+                    </list>
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Softens hair
+                        </span>
+                    </list>
+                </ul>
+                <img src="img2/Rectangle 3 (1).png"/>
+            </div>
+            
+            <div class="p-6 border-[1px] rounded-[24px] border-colorBlack">
+                <span class="bg-lightPink text-colorBlack font-semibold px-4 py-3 rounded-[200px]">
+                    Step 2: Nourish
+                </span>
+                <p class="text-colorBlack mt-6 text-[18px]">
+                    Our Rinse uses Ionic Cleansing™ technology to gently clean hair using the natural magnetic attraction 
+                    of positively-charged Rhassoul Clay to negatively-charged dirt and impurities
+                </p>
+                <h6 class="text-colorBlack text-[18px] font-semibold my-2">Benefits:</h6>
+                <ul class="space-y-2 mb-3">
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Replenishes moisture & hydration
+                        </span>
+                    </list> 
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Adds volume
+                        </span>
+                    </list>
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Strengthens & detangles hair
+                        </span>
+                    </list>
+                </ul>
+                <img src="img2/Rectangle 3 (1).png"/>
+            </div>
+    
+            <div class="p-6 border-[1px] rounded-[24px] border-colorBlack">
+                <span class="bg-lightPink text-colorBlack font-semibold px-4 py-3 rounded-[200px]">
+                    Step 3: Repair
+                </span>
+                <p class="text-colorBlack mt-6 text-[18px]">
+                    Our Rinse uses Ionic Cleansing™ technology to gently clean hair using the natural magnetic attraction 
+                    of positively-charged Rhassoul Clay to negatively-charged dirt and impurities
+                </p>
+                <h6 class="text-colorBlack text-[18px] font-semibold my-2">Benefits:</h6>
+                <ul class="space-y-2 mb-3">
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Smooths hair cuticle
+                        </span>
+                    </list> 
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Adds shine
+                        </span>
+                    </list>
+                    <list class="flex gap-x-2">
+                        <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                        <span class="text-colorBlack text-[18px]">
+                            Provides all-day protection
+                        </span>
+                    </list>
+                </ul>
+                <img src="img2/Rectangle 3 (1).png"/>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--mobile mounia products elements details and by what it's made of -->
+     <section class="my-10 md:hidden">
+        <div class="px-6">
+            <h1 class="text-colorBlack text-[30px] font-bold">
+                What’s In The System?
+            </h1>
+            <h6 class="text-lightBlue text-[24px] font-semibold">
+                Your new and improved haircare routine.
+            </h6>
+        </div>
+        <!-- slide container  -->
+        <div class="h-[730px] relative">
+            <div class="swiper mySwiperFour">
+                <div class="swiper-wrapper">
+                    <!-- slide one -->
+                    <div class="h-full swiper-slide">
+                        <div class="p-6 w-[322px] text-[14px] border-[1px] rounded-[24px] border-colorBlack">
+                            <span class="bg-lightPink text-colorBlack font-semibold px-4 py-3 rounded-[200px]">
+                                Step 1: Cleanse
+                            </span>
+                            
+                            <p class="text-colorBlack mt-6">
+                                Our Rinse uses Ionic Cleansing™ technology to gently clean hair using the natural magnetic attraction 
+                                of positively-charged Rhassoul Clay to negatively-charged dirt and impurities
+                            </p>
+                            <h6 class="text-colorBlack text-[14px] font-semibold my-2">Benefits:</h6>
+                            <ul class="space-y-2 mb-6 text-[14px]">
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Rebalances scalp
+                                    </span>
+                                </list> 
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Removes build-up & impurities
+                                    </span>
+                                </list>
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Softens hair
+                                    </span>
+                                </list>
+                            </ul>
+                            <img src="img2/Rectangle 3 (1).png"/>
+                        </div>
+                    </div>
+                    <!-- slide two -->
+                    <div class="h-full swiper-slide">
+                        <div class="p-6 w-[322px] text-[14px] border-[1px] rounded-[24px] border-colorBlack">
+                            <span class="bg-lightPink text-colorBlack font-semibold px-4 py-3 rounded-[200px]">
+                                Step 2: Nourish
+                            </span>
+                            
+                            <p class="text-colorBlack mt-6">
+                                Our luxurious Masque uses Selective Hydration™ technology to provide extra focus on the damaged 
+                                areas of your hair.
+                            </p>
+                            <h6 class="text-colorBlack text-[14px] font-semibold my-2">Benefits:</h6>
+                            <ul class="space-y-2 mb-6 text-[14px]">
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Replenishes moisture & hydration
+                                    </span>
+                                </list> 
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Adds volume
+                                    </span>
+                                </list>
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Strengthens & detangles hair
+                                    </span>
+                                </list>
+                            </ul>
+                            <img src="img2/Rectangle 3 (1).png"/>
+                        </div>
+                    </div>
+                    <!-- slide three -->
+                    <div class="h-full swiper-slide">
+                        <div class="p-6 w-[322px] text-[14px] border-[1px] rounded-[24px] border-colorBlack">
+                            <span class="bg-lightPink text-colorBlack font-semibold px-4 py-3 rounded-[200px]">
+                                Step 3: Repair 
+                            </span>
+                            
+                            <p class="text-colorBlack mt-6">
+                                Argan & prickly pear oils, hybridized with our patented HAPi ™ technology, coat each 
+                                strand of hair to smooth cuticles and restore the hair’s natural protective barrier. 
+                            </p>
+                            <h6 class="text-colorBlack text-[14px] font-semibold my-2">Benefits:</h6>
+                            <ul class="space-y-2 mb-6 text-[14px]">
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Smooths hair cuticle
+                                    </span>
+                                </list> 
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Adds shine
+                                    </span>
+                                </list>
+                                <list class="flex gap-x-2">
+                                    <img class="w-6 -h-6" src="img2/Group 9.svg"/>
+                                    <span class="text-colorBlack">
+                                        Provides all-day protection
+                                    </span>
+                                </list>
+                            </ul>
+                            <img src="img2/Rectangle 3 (1).png"/>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination swiper-pagination-four"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- call to action asking users to use mounia proudcts  -->
+    <section class="pb-8 mt-16 bg-lightBlue relative md:pb-24 md:py-16 md:mt-24">
         <div class="container flex flex-col md:flex-row md:mx-auto md:w-[1200px]">
             <div class="box-border px-4 pt-6 md:px-0 md:w-1/2">
                 <h1 class="text-colorBlack text-[30px] font-bold md:text-[40px]">
@@ -198,8 +781,8 @@
 
                 <a 
                     href="#" 
-                    class="block w-[90%] bg-white text-[16px] font-semibold uppercase px-[20px] 
-                    py-[12px] border-[1px] border-colorBlack rounded-full text-center absolute bottom-0 md:mx-0 md:text-[18px] md:static md:inline"
+                    class="hidden bg-white text-[16px] font-semibold uppercase px-[20px] 
+                    py-[12px] border-[1px] border-colorBlack rounded-full text-center md:mx-0 md:px-[40px] md:[py-18] md:text-[18px] md:inline"
                 >
                     <img class="inline-block w-10 h-10 mr-2" src="img2/Ellipse 7.png"/>
                     <span>bye now</span>
@@ -207,6 +790,15 @@
             </div>
             <div>
                 <img class="w-[343px] h-[237px] mx-auto md:mx-0 md:w-auto md:h-auto" src="img2/Rectangle 3.png"/>
+                <a 
+                    href="#" 
+                    class="block w-[90%] mt-8 mx-auto bg-white text-[16px] font-semibold uppercase px-[20px] 
+                    py-[12px] border-[1px] border-colorBlack rounded-full text-center md:hidden"
+                >
+                    <img class="inline-block w-10 h-10 mr-2" src="img2/Ellipse 7.png"/>
+                    <span>bye now</span>
+            </a>
+                
             </div>
         </div>
     </section>
@@ -237,5 +829,6 @@
         </div>
     </footer>
     
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
